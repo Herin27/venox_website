@@ -113,3 +113,23 @@ nextBtn.addEventListener("click", nextSlide);
 createDots();
 updateSlider();
 setInterval(nextSlide, 4000);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const boxes = document.querySelectorAll(".park-box");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.5 });
+
+    boxes.forEach(box => {
+        observer.observe(box);
+    });
+
+
+});
+

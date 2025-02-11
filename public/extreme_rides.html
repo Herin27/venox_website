@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extreme Rides - Adrenaline Rush</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: #fff;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Slider */
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slideAnimation 18s infinite;
+        }
+        .slide {
+            width: 100%;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .slide::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+        }
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        .slide:nth-child(1) .slide-content { animation-delay: 0.5s; }
+        .slide:nth-child(2) .slide-content { animation-delay: 6.5s; }
+        .slide:nth-child(3) .slide-content { animation-delay: 12.5s; }
+        .slide-content h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px #000;
+            margin-bottom: 15px;
+        }
+        .slide-content p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #000;
+            max-width: 600px;
+            margin: auto;
+        }
+        @keyframes slideAnimation {
+            0% { transform: translateX(0%); }
+            33% { transform: translateX(0%); }
+            38% { transform: translateX(-100%); }
+            71% { transform: translateX(-100%); }
+            76% { transform: translateX(-200%); }
+            100% { transform: translateX(-200%); }
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+
+
+        /* Details Section */
+        .details-section {
+            padding: 100px 20px 60px;
+            background: #fff;
+        }
+        .details-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-title h2 {
+            font-size: 2.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .section-title p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .park-card img {
+            width: 100%;
+            max-width: 500px;
+            object-fit: cover;
+        }
+        .park-info h3 {
+            font-size: 2em;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+        .park-info p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Additional Information Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .info-box {
+            background: #fefefe;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .info-box h4 {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.5em;
+        }
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info-box ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .info-box ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .park-card { flex-direction: column; }
+            .slide-content h1 { font-size: 2.5em; }
+            .slide-content p { font-size: 1em; padding: 0 10px; }
+            nav ul li { margin-left: 15px; }
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <div class="nav-container">
+        <div class="logo">Extreme Rides</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Slider Section -->
+<section class="slider">
+    <div class="slides">
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1582712648999-9f820f697c3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="slide-content">
+                <h1>Feel the Adrenaline</h1>
+                <p>Experience extreme thrills and breathtaking speed.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571243400111-6b0a3d9e5b10?auto=format&fit=crop&w=2070&q=80');">
+            <div class="slide-content">
+                <h1>Defy Gravity</h1>
+                <p>Push your limits with heart-stopping rides.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1598133894000-fb0b87ed8a0c?auto=format&fit=crop&w=2070&q=80');">
+            <div class="slide-content">
+                <h1>Thrill Seeker's Paradise</h1>
+                <p>For those who crave adventure and speed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Details Section -->
+<section class="details-section" id="experience-extreme-rides">
+    <div class="details-container">
+        <div class="section-title">
+            <h2>Experience Extreme Rides</h2>
+        </div>
+        <div class="content">
+            <p>
+                Step into a realm where the limits of thrill and excitement are redefined. Our Extreme Rides offer an unparalleled journey that combines cutting-edge technology with heart-stopping adrenaline. Designed with precision and engineered for both power and finesse, these rides promise an experience that defies gravity and leaves you breathless.
+            </p>
+            <p>
+                Every ride is a masterpiece of modern engineering, meticulously crafted to ensure that each twist, turn, and loop delivers a surge of adrenaline. Advanced mechanical systems and state-of-the-art safety measures work together so that while you push your limits, you remain in the safest hands possible.
+            </p>
+            <p>
+                As you embark on your adventure, prepare to be immersed in an environment where every element is tailored to amplify the thrill. Feel the rapid acceleration propel you into a blur of motion, experience the sudden drops that send your heart racing, and enjoy the dizzying loops that challenge your perceptions of speed and gravity.
+            </p>
+            <p>
+                Our Extreme Rides are more than just attractions—they are a celebration of the human spirit’s hunger for adventure. Whether you are a seasoned thrill-seeker or trying an extreme ride for the first time, each moment is designed to be as immersive as it is exhilarating, offering a unique blend of excitement, innovation, and pure adrenaline.
+            </p>
+            <p>
+                Join us on this extraordinary journey where every twist and turn pushes the boundaries of what is possible. With breathtaking engineering, unmatched safety protocols, and an atmosphere charged with energy, our Extreme Rides invite you to experience life at full throttle and create memories that will last a lifetime.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- Additional Information Grid -->
+        <div class="info-grid">
+            <div class="info-box" id="highlights">
+                <h4>Highlights</h4>
+                <ul>
+                    <li>High-Speed Roller Coasters</li>
+                    <li>Gravity-Defying Drops</li>
+                    <li>Looping Thrills</li>
+                    <li>Heart-Racing Free Falls</li>
+                </ul>
+            </div>
+            <div class="info-box" id="safety">
+                <h4>Safety Measures</h4>
+                <ul>
+                    <li>Regular Maintenance</li>
+                    <li>Certified Instructors</li>
+                    <li>Strict Safety Protocols</li>
+                    <li>Emergency Services</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h4>Visitor Info</h4>
+                <ul>
+                    <li>Operating Hours: 10 AM - 10 PM</li>
+                    <li>Ticket Prices: Starting at $35</li>
+                    <li>Group Discounts Available</li>
+                    <li>Contact: 987-654-3210</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="details-section" id="contact">
+    <div class="details-container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <p style="text-align: center;">For inquiries, please email us at <a href="mailto:info@extremerides.com">info@extremerides.com</a></p>
+    </div>
+</section>
+</body>
+</html>

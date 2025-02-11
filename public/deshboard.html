@@ -18,6 +18,9 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
             rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <script src="script.js" defer></script>
@@ -107,23 +110,124 @@
 
 <div class="slider-container">
     <div class="slides">
-        <div class="slide"><img src="https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 1"></div>
-        <div class="slide"><img src="https://images.unsplash.com/photo-1501471984908-815b996862f4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 2"></div>
-        <div class="slide"><img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Slide 3"></div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1628238996362-a90f37d35b33?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Water Slide">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1623718649591-311775a30c43?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Water Adventure">
+        </div>
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1546699718-5871c27b4197?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Water Park">
+        </div>
     </div>
 
     <button class="prev">&#10094;</button>
     <button class="next">&#10095;</button>
+
+    <div class="dots"></div>
+
+    <!-- Animated SVG Waves -->
+    <div class="wave-container">
+        <svg class="wave wave1" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1"
+                  d="M0,256L60,240C120,224,240,192,360,197.3C480,203,600,245,720,256C840,267,960,245,1080,213.3C1200,181,1320,139,1380,117.3L1440,96L1440,320L0,320Z">
+            </path>
+        </svg>
+        <svg class="wave wave2" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="0.5"
+                  d="M0,320L80,277.3C160,235,320,149,480,138.7C640,128,800,192,960,213.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L0,320Z">
+            </path>
+        </svg>
+    </div>
 </div>
 
-<div class="dots"></div>
-
-<div class="about-section">
-    <h2>About Us</h2>
-    <p>Venox operates as a trusted subsidiary brand under the umbrella of Velox, a globally recognized leader in smart secu- rity solutions. As a leading advanced ticketing and park management solution, Venox helps park authorities deliver a seamless and secure experience for visitors.
-        With integrated features like RFID-based access control, cashless payment systems, and centralized dashboards, Venox ensures efficient management and robust security.
-        Real-time updates via electronic display boards, employee tracking, and digital locker services, enhance operational transparency, giving park authorities full oversight while improving visitor satisfac- tion. Venox is the trusted solution for creating a well-managed, secure, and visitor-friendly park environment.</p>
+<div class="about-container">
+    <div class="about-image">
+        <img src="./image/venox-about.jpg" alt="Company Image">
+    </div>
+    <div class="about-content">
+        <h2 class="about_h1">About Us</h2>
+        <p>We are a forward-thinking technology company dedicated to providing innovative solutions in web development,
+            AI-powered applications, and cutting-edge digital services. Our mission is to create impactful software that
+            enhances productivity and efficiency, ensuring excellence in every project we undertake.</p>
+        <button class="about_btn"><a href="./about.html">Read More</a></button>
+    </div>
 </div>
+<h1 class="grid_h1">The Complete Theme Park & Water Park Solution</h1><br>
+<section class="theme-park-section">
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1569016571393-7237d57aa84c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Adventure Land">
+        <h3>Adventure Land</h3>
+        <p>Experience thrilling rides and amazing attractions.</p>
+        <a href="adventure-land.html" class="details-btn">Show More Details</a>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1491382825904-a4c6dca98e8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Water World">
+        <h3>Water World</h3>
+        <p>Enjoy water slides and wave pools like never before.</p>
+        <a href="water-world.html" class="details-btn">Show More Details</a>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1499343162160-cd1441923dd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fantasy Park">
+        <h3>Fantasy Park</h3>
+        <p>Enter a world of fantasy with magical experiences.</p>
+        <a href="fantasy-park.html" class="details-btn">Show More Details</a>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1582712648999-9f820f697c3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Extreme Rides">
+        <h3>Extreme Rides</h3>
+        <p>For adrenaline junkies who love speed and height.</p>
+        <a href="extreme_rides.html" class="details-btn">Show More Details</a>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2041&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lazy River">
+        <h3>Lazy River</h3>
+        <p>Relax and float down the peaceful lazy river.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1713974000405-6ae3b2e1b11b?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wave Pool">
+        <h3>Wave Pool</h3>
+        <p>Feel the ocean waves in a safe environment.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1502781252888-9143ba7f074e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kids Zone">
+        <h3>Kids Zone</h3>
+        <p>Fun-filled rides and activities for children.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1553321846-ad6616f5d1db?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Food Court">
+        <h3>Food Court</h3>
+        <p>Enjoy delicious meals with a variety of cuisines.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1416273567255-8abe875affcd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Live Shows">
+        <h3>Live Shows</h3>
+        <p>Experience exciting performances and entertainment.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1481018085669-2bc6e4f00eed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haunted House">
+        <h3>Haunted House</h3>
+        <p>Dare to enter the haunted mansion?</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1613058502382-f2c4656638ff?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Roller Coasters">
+        <h3>Roller Coasters</h3>
+        <p>The best and fastest coasters for thrill seekers.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+    <div class="park-box">
+        <img src="https://images.unsplash.com/photo-1548705085-101177834f47?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Family Fun">
+        <h3>Family Fun</h3>
+        <p>Perfect attractions for the entire family to enjoy.</p>
+        <button class="details-btn">Show More Details</button>
+    </div>
+</section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 <script src="./js/deshboard.js"></script>

@@ -168,8 +168,8 @@ body::before {
 .dropdown-content {
     display: none;
     position: absolute;
-    background: #FEF9E1;
-    color: #A31D1D;
+    background: #fff;
+    color: #EA5E04;
     min-width: 160px;
     top: 100%;
     left: 0;
@@ -183,15 +183,15 @@ body::before {
 }
 
 .dropdown-content a {
-    color: #A31D1D;
+    color: #EA5E04;
     padding: 0.5rem 1rem;
     display: block;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #A31D1D;
-    color: #FEF9E1;
+    background-color: #EA5E04;
+    color: #FFFFFF;
 }
 
 .dropdown:hover .dropdown-content {
@@ -897,7 +897,8 @@ header h2 {
 .grid_h1{
     font-size: 36px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    color: #000;
 }
 .theme-park-section {
     padding: 50px;
@@ -990,3 +991,223 @@ header h2 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.client_h1{
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+}
+.client-section {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+    background: #f8f8f8;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.client-slider {
+    display: flex;
+    width: max-content;
+    animation: slide 10s linear infinite;
+}
+
+.client-slider img {
+    width: 50px;
+    margin: 0 20px;
+    display: inline-block;
+}
+.cliend_btn{
+    display: block;
+    width: 10%;
+    padding: 10px 10px;
+    background: #EA5E04;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 45%;
+}
+
+.cliend_btn a{
+    color: white;
+    text-decoration: none;
+}
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Section Styling */
+.velox-section {
+    padding: 50px 20px;
+    background: #F0F4F8;
+ width: 100%;
+}
+
+.velox-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.velox-section h2 span {
+    color: #007bff;
+}
+
+.velox-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-left: 32%;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Features Container */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Feature Box */
+.feature {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+/* Footer Content */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sections Styling */
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.footer p, .footer a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #EA5E04;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #EA5E04;
+}
+
+/* Contact Section */
+.footer-contact p {
+    margin: 8px 0;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.8rem;
+    color: #000;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #EA5E04;
+    transform: scale(1.1);
+}
+
+/* Copyright Section */
+.footer-bottom {
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
+

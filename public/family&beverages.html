@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family & Beverages | Venox</title>
+    <link rel="stylesheet" href="./css//family.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Venox</div>
+        <ul class="nav-links">
+            <li><a href="deshboard.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="family-beverages.html" class="active">Family & Beverages</a></li>
+            <li><a href="contect.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image Slider -->
+    <section class="slider">
+        <div class="slides">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coffee">
+                <div class="slider-text">☕ Premium Roasted Coffee</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1597958294484-98ba2fb644fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tea">
+                <div class="slider-text">🍵 Herbal Organic Tea</div>
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1496318447583-f524534e9ce1?q=80&w=2134&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Juice">
+                <div class="slider-text">🥤 Fresh Fruit Juices</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="beverages" class="content">
+        <h2>Why Choose Our Beverages?</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Authentic Coffee</h3>
+                <p>Sourced from the best coffee plantations, our coffee is rich in flavor and aroma.</p>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-leaf"></i>
+                <h3>Organic Tea</h3>
+                <p>Herbal tea that rejuvenates your mind and body, made from natural ingredients.</p>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-glass-whiskey"></i>
+                <h3>Fresh Juices</h3>
+                <p>100% natural, no added sugar—just pure goodness for a healthy lifestyle.</p>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-blender"></i>
+                <h3>Milkshakes</h3>
+                <p>Deliciously creamy shakes made from fresh dairy and premium flavors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Venox | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slider -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+    </script>
+
+</body>
+</html>

@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', './deshboard.html'));
 });
 
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Locker</title>
+    <link rel="stylesheet" href="./css/digital-locker.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Digital Locker</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="deshboard.html">Home</a></li>
+            <li><a href="digital-locker.html">How It Works</a></li>
+            <li><a href="contect.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1617021483925-a331d536133d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="hero-content">
+            <h2>Secure & Convenient Digital Locker</h2>
+            <p>Store and access your documents safely anytime, anywhere.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Our Digital Locker?</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <h3>Secure Storage</h3>
+                <p>End-to-end encrypted storage to protect your sensitive files.</p>
+            </div>
+            <div class="card">
+                <h3>24/7 Access</h3>
+                <p>Retrieve your documents anytime, from any device.</p>
+            </div>
+            <div class="card">
+                <h3>Easy Sharing</h3>
+                <p>Securely share documents with authorized users.</p>
+            </div>
+            <div class="card">
+                <h3>Auto Backup</h3>
+                <p>Never lose important files with automated cloud backup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">📂 Upload Documents</div>
+            <div class="step">🔒 Securely Store</div>
+            <div class="step">🌍 Access Anytime</div>
+            <div class="step">📤 Share Easily</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" onclick="toggleFaq(this)">
+            <h3>Is my data safe?</h3>
+        </div>
+        <div class="faq-content">Yes, our system uses advanced encryption to secure all files.</div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+            <h3>Can I access my files offline?</h3>
+        </div>
+        <div class="faq-content">You can download important files for offline access.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Digital Locker. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">🔵 Facebook</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📸 Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

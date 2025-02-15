@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costume Management</title>
+    <link rel="stylesheet" href="./css/costume-management.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Costume Management</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="deshboard.html">Home</a></li>
+            <li><a href="costume-management.html">How It Works</a></li>
+            <li><a href="contect.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="hero-content">
+            <h2>Efficient & Smart Costume Management</h2>
+            <p>Manage, track, and organize costumes with ease.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Our Costume Management System?</h2>
+        <p>Experience organized, real-time control over costumes and equipment. With RFID or barcode tracking, one can instantly check out and return items, ensuring everything is ready for use and minimizing loss or delay. This system ensures an efficient flow of operations for staff and performers alike.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">🔍 Browse & Select Costumes</div>
+            <div class="step">📋 Reserve & Rent</div>
+            <div class="step">🎭 Use & Return</div>
+            <div class="step">📦 Maintain & Store</div>
+        </div>
+    </section>
+
+    <!-- Costume Categories Section -->
+    <section class="categories">
+        <h2>Costume Categories</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1533022586528-2e09bde0959b?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Theater Costumes">
+                <h3>Theater Costumes</h3>
+            </div>
+            <div class="category">
+                <img src="https://images.unsplash.com/photo-1600527890363-b637a0a82eba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event Costumes">
+                <h3>Event Costumes</h3>
+            </div>
+            <div class="category">
+                <img src="https://plus.unsplash.com/premium_photo-1698238184805-298faf3c1f59?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Historical Costumes">
+                <h3>Historical Costumes</h3>
+            </div>
+            <div class="category">
+                <img src="https://plus.unsplash.com/premium_photo-1683310366462-7ea837c7e04d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fantasy Costumes">
+                <h3>Fantasy Costumes</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" onclick="toggleFaq(this)">
+            <h3>Can I track costume availability in real-time?</h3>
+        </div>
+        <div class="faq-content">Yes, our system provides live updates on stock availability.</div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+            <h3>How does RFID tracking work?</h3>
+        </div>
+        <div class="faq-content">RFID tags attached to costumes allow quick identification and tracking.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Costume Management. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">🔵 Facebook</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">📸 Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>

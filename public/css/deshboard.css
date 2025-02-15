@@ -158,6 +158,10 @@ body::before {
 
 .nav-links a:hover {
     color: #EA5E04;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    
 }
 
 /* Dropdown Menu Styles */
@@ -1113,8 +1117,8 @@ header h2 {
 /* Footer Styling */
 .footer {
     width: 100%;
-    background: #fff;
-    color: #000;
+    background: #EA5E04;
+    color: #fff;
     padding: 50px 0 20px;
     text-align: center;
 }
@@ -1133,19 +1137,19 @@ header h2 {
 .footer h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .footer p, .footer a {
     font-size: 1rem;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .footer a:hover {
-    color: #EA5E04;
+    color: #000;
 }
 
 /* Footer Links */
@@ -1159,7 +1163,7 @@ header h2 {
 }
 
 .footer-links ul li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -1178,12 +1182,12 @@ header h2 {
     display: inline-block;
     margin: 10px;
     font-size: 1.8rem;
-    color: #000;
+    color: #fff;
     transition: 0.3s;
 }
 
 .social-icons a:hover {
-    color: #EA5E04;
+    color: #000;
     transform: scale(1.1);
 }
 

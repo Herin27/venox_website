@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seamless Ticketing Solutions</title>
+    <link rel="stylesheet" href="./css/ticket.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- Updated Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <h1 class="logo">Venox</h1>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="deshboard.html">Home</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li class="dropdown">
+                <a href="#">Services &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Online Ticketing</a></li>
+                    <li><a href="#">Event Management</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </li>
+            <li><a href="contect.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Seamless Ticketing Solutions</h1>
+        <p>Fast, Secure, and Hassle-Free Ticketing for Every Event</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </div>
+</section>
+
+<h2 class="section-title">Why Choose Venox?</h2>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            
+            <div class="features-grid">
+
+                <div class="feature-box">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Instant Ticket Booking</h3>
+                    <p>Seamlessly book tickets in seconds with our fast and secure system.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Secure Transactions</h3>
+                    <p>We ensure 100% secure transactions with encrypted payments.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Easy Management</h3>
+                    <p>Effortlessly manage ticket sales, cancellations, and reports.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Friendly</h3>
+                    <p>Our platform works seamlessly on all devices, from desktops to mobiles.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-users"></i>
+                    <h3>Multi-User Support</h3>
+                    <p>Allow multiple users to manage ticketing operations efficiently.</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Get real-time support anytime you need assistance.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Get Started Today</h2>
+        <p>Transform your ticketing experience with our seamless solution.</p>
+        <a href="#" class="btn">Start Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Venox. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav-links");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
+        
+
+</body>
+</html>

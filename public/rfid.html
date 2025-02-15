@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID Band Controls | Venox</title>
+    <link rel="stylesheet" href="./css/rfid.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Venox</h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="deshboard.html">Home</a></li>
+                <li><a href="rfid.html" class="active">RFID Band</a></li>
+                <li><a href="contect.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="animated-title">RFID Band Controls</h2>
+            <p>Seamless Access, Secure Payments, and Uninterrupted Fun!</p>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="container1">
+            <h2>🔹 Why Choose RFID Bands?</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>🎟️ Instant Access</h3>
+                    <p>Get your RFID band activated within moments, ensuring smooth entry to all park facilities.</p>
+                </div>
+                <div class="card">
+                    <h3>💳 Cashless Transactions</h3>
+                    <p>Recharge online or at multiple locations for easy, secure, and contactless payments.</p>
+                </div>
+                <div class="card">
+                    <h3>📊 Real-time Balance</h3>
+                    <p>Stay updated with your balance, reducing payment hassles and ensuring uninterrupted fun.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 Secure & Reliable</h3>
+                    <p>Advanced encryption ensures every transaction and access point is safe and secure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container1">
+            <h2>🌟 RFID Band Benefits</h2>
+            <div class="benefit-grid">
+                <div>✅ Fast entry to rides and events</div>
+                <div>✅ Eliminates the need for cash</div>
+                <div>✅ Reduces ticket fraud and misuse</div>
+                <div>✅ Easy replacement in case of loss</div>
+                <div>✅ Secure and personalized experience</div>
+                <div>✅ Helps track spending and usage</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container1">
+            <h2>💬 What Our Users Say</h2>
+            <p>“RFID bands made my visit so smooth! No need to carry cash or worry about tickets.” - <strong>Amit Sharma</strong></p>
+            <p>“Recharge was simple, and I could access all rides instantly. Highly recommend!” - <strong>Neha Gupta</strong></p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container1">
+            <h2>❓ Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">🔹 How do I activate my RFID band? ➕</h3>
+                <p class="faq-content">You can activate your band at any counter in the park or online using the Venox app.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">🔹 Where can I recharge my band? ➕</h3>
+                <p class="faq-content">Recharge at kiosks, online through our website, or at selected partner locations.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFaq(this)">🔹 Is my money safe if I lose the band? ➕</h3>
+                <p class="faq-content">Yes, you can block your lost band and transfer the balance to a new one via our support team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Venox. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+    const content = element.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
+
+    </script>
+
+</body>
+</html>

@@ -158,6 +158,10 @@ body::before {
 
 .nav-links a:hover {
     color: #EA5E04;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    
 }
 
 /* Dropdown Menu Styles */

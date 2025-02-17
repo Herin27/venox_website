@@ -270,3 +270,97 @@ body {
     text-align: center;
     padding: 15px;
 }
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #004aad;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 80vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 40px 15px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-box {
+        padding: 15px;
+    }
+
+    .feature-box i {
+        font-size: 35px;
+    }
+
+    /* CTA Section */
+    .cta {
+        padding: 30px 15px;
+    }
+
+    .cta h2 {
+        font-size: 24px;
+    }
+
+    .cta p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px;
+    }
+}

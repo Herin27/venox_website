@@ -1473,4 +1473,11 @@ header h2 {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         margin: 20px 30%;
     }
+
+    .footer p, .footer a {
+        font-size: 0.7rem;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 }

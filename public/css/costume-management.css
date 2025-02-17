@@ -26,7 +26,10 @@ body {
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
+.logo a{
+    color: white;
+    text-decoration: none;
+}
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
@@ -281,29 +284,161 @@ footer {
     }
 }
 
-/* Responsive Design */
+
+
+/* Mobile-Specific Styles */
 @media (max-width: 768px) {
+    /* Navbar */
     .navbar {
         padding: 15px 20px;
+        background: #333;
     }
-    
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
+        background: #282c36;
         position: absolute;
         top: 60px;
         left: 0;
-        background: #282c36;
         padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-links li {
-        text-align: center;
         margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 10px;
+        color: white;
     }
 
     .hamburger {
         display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 40px 15px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+        padding: 40px 15px;
+    }
+
+    .how-it-works h2 {
+        font-size: 28px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    /* Costume Categories */
+    .categories {
+        padding: 40px 15px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        padding: 15px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        padding: 40px 15px;
+    }
+
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faq-item {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 10px;
+    }
+
+    .social-links a {
+        margin: 0 5px;
+        font-size: 18px;
+    }
+
+    /* Mobile-Only Animations */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Reduce Font Size */
+    .hero-content h2, .features h2, .how-it-works h2, .faq h2, .footer {
+        font-size: 24px;
     }
 }

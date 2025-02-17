@@ -168,3 +168,127 @@
     border-top: 1px solid #444;
     padding-top: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    /* Mobile Menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #101820;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 1.8rem;
+        color: #FEE715;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Mission & Vision */
+    .mission-vision {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .mission, .vision {
+        padding: 15px;
+    }
+
+    .mission h3, .vision h3 {
+        font-size: 1.5rem;
+    }
+
+    .mission p, .vision p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer p, .footer a {
+        font-size: 0.9rem;
+    }
+
+    .footer-social .social-icons a {
+        font-size: 1.5rem;
+    }
+}

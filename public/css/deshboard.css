@@ -1252,7 +1252,7 @@ header h2 {
 
     .navbar {
         position: fixed;
-        top: 37px; /* Positioning navbar below header */
+        top: 30px; /* Positioning navbar below header */
         width: 100%;
         background-color: #fff;
         color: #000;

@@ -21,6 +21,10 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+.logo a{
+    color: #FEE715;
+    text-decoration: none;
+}
 
 .nav-links {
     list-style: none;

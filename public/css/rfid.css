@@ -28,7 +28,10 @@ body {
     align-items: center;
     z-index: 1000;
 }
-
+.logo a{
+    color: white;
+    text-decoration: none;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -310,8 +313,17 @@ footer .social-links a:hover {
     }
 }
 
-/* Responsive Design */
+/* Mobile Responsive */
 @media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -319,15 +331,131 @@ footer .social-links a:hover {
         position: absolute;
         top: 50px;
         right: 0;
-        width: 200px;
+        width: 100%;
         text-align: center;
+        padding: 10px 0;
     }
 
     .nav-links li {
-        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
     }
 
     .hamburger {
         display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://images.unsplash.com/photo-1637713387970-e0ffa225977b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+        height: 50vh;
+        padding: 30px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Information Section */
+    .info-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .info-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .info-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    /* Benefits Section */
+    .benefits {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .benefits h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .benefit-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials p {
+        font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .faq h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+
+    .faq-item:hover {
+        background: #f3faff;
+    }
+
+    .faq-content {
+        padding: 10px;
+        background: #ddd;
+        border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .social-links a {
+        font-size: 18px;
     }
 }

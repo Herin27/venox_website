@@ -13,7 +13,10 @@ body {
     background: #f9f9f9;
     color: #333;
 }
-
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
 /* Navbar */
 .navbar {
     background: #004aad;
@@ -158,4 +161,91 @@ footer .social-links a {
 
 footer .social-links a:hover {
     color: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+
+
+    .navbar .logo {
+        font-size: 18px;
+        text-align: center;
+    }
+    .logo a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+
+
+    /* Hero Section */
+    .hero {
+        height: 50vh;
+        background-size: cover;
+        padding: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 40px 20px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+        padding: 40px 20px;
+    }
+
+    .steps {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        padding: 40px 20px;
+    }
+
+    .faq-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    footer .social-links a {
+        font-size: 20px;
+    }
 }

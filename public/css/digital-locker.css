@@ -55,7 +55,10 @@ body {
 .nav-links a:hover {
     color: #ffcc00;
 }
-
+.logo img{
+    width: 100px;
+    height: auto;
+}
 /* Mobile Menu */
 .hamburger {
     display: none;

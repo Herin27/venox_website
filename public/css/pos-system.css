@@ -53,7 +53,10 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
-
+.logo img{
+    width: 100px;
+    height: auto;
+}
 .nav-links a:hover {
     background: #ff9800;
     color: #1c1c1c;

@@ -58,6 +58,10 @@ body {
     background: #ff9800;
     color: #1c1c1c;
 }
+.logo img{
+    width: 100px;
+    height: auto;
+}
 
 /* Hero Section */
 .hero {

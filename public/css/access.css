@@ -5,7 +5,10 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
+.logo img{
+    width: 100px;
+    height: auto;
+}
 /* Navbar */
 .navbar {
     background: #fff;

@@ -219,3 +219,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+function sendEmail() {
+    let email = document.getElementById("email").value;
+    if (email) {
+        let subject = "New Subscription";
+        let body = `Hello, I would like to subscribe to your newsletter. My email: ${email}`;
+        window.location.href = `mailto:herin7151@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    } else {
+        alert("Please enter a valid email address.");
+    }
+}

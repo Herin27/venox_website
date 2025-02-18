@@ -62,7 +62,10 @@ body {
     padding: 8px 12px;
     transition: 0.3s ease-in-out;
 }
-
+.logo img{
+    width: 100px;
+    height: auto;
+}
 .nav-links a:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;

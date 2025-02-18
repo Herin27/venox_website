@@ -470,7 +470,7 @@ body::before {
     outline: none;
     border: none;
     height: 55px;
-    width: 190px;
+    width: 200px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -489,7 +489,7 @@ body::before {
     color: #faf9f6;
     text-decoration: none;
     font-size: 16px;
-
+    margin-left: 10px;
 }
 .chat_btn a:hover{
     color: #000000;
@@ -1081,13 +1081,14 @@ header h2 {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #666;
-    margin-left: 32%;
 }
 
 .subtitle {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 30px;
+    text-align: center;
+    max-width: 100%;
 }
 
 /* Features Container */
@@ -1107,7 +1108,7 @@ header h2 {
     padding: 20px;
     width: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
 }
 
 .feature img {
@@ -1124,6 +1125,7 @@ header h2 {
 .feature p {
     font-size: 1rem;
     color: #666;
+    text-align: center;
 }
 
 /* Footer Styling */
@@ -1152,7 +1154,11 @@ header h2 {
     color: #fff;
     text-transform: uppercase;
 }
-
+.img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
 .footer p, .footer a {
     font-size: 1rem;
     color: #fff;
@@ -1162,6 +1168,30 @@ header h2 {
 
 .footer a:hover {
     color: #000;
+}
+.footer-about img{
+    width: 200px;
+    height: auto;
+}
+.footer-about h3{
+    font-size: 1.9rem;
+    color: #fff;
+    margin-bottom: -10px;
+    text-align: left;
+}
+.h3{
+    font-size: 2.4rem;
+    color: deepskyblue;
+    margin-bottom: -10px;
+    text-align: left;
+}
+
+.footer-about p{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 300;
 }
 
 /* Footer Links */
@@ -1222,13 +1252,13 @@ input {
 button {
     padding: 10px 10px;
     border: none;
-    background-color: #28a745;
+    background-color: green;
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 button:hover {
-    background-color: #218838;
+    background-color: #EA5E04;
 }
 
 /* Responsive Design */

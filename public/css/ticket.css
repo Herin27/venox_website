@@ -277,6 +277,7 @@ body {
     text-align: center;
     padding: 15px;
 }
+
 @media screen and (max-width: 768px) {
     /* Navbar */
     .navbar {

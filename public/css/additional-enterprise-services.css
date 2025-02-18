@@ -127,13 +127,11 @@ body {
 }
 
 /* Footer */
-footer {
+.footer {
     background: #EA5E04;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
-    margin-top: 30px;
+    padding: 15px;
 }
 @media screen and (max-width: 768px) {
     /* General Styles */

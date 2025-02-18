@@ -149,11 +149,11 @@ body {
 }
 
 /* Footer */
-footer {
+.footer {
     background: #EA5E04;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px;
 }
 
 footer .social-links a {

@@ -143,7 +143,7 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
 // Logout function to clear localStorage and redirect to login page
 function logout() {
     localStorage.removeItem('user');
-    window.location.href = "../deshboard.html";
+    window.location.href = "../index.html";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -12,7 +12,7 @@ ADMIN_EMAIL="herin7151@gmail.com";
 ADMIN_PASS="saqs bgro qtgk wlxh";
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', './deshboard.html'));
+    res.sendFile(path.join(__dirname, 'public', './index.html'));
 });
 
 
